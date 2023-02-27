@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- TODO: <html lang="en"> -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
-<body>
-    Hello world
+<body style="margin:0; padding:0;">
+    <!-- Navigator -->
+    <!-- <div class="navigator"></div>
+    <script type="text/javascript">
+        $(".navigator").load('navigator.html');
+    </script> -->
+
+    <!-- Name -->
+    <div style="position:relative; width:100%; height:20em; background-color: black;">
+        <canvas id="canvasMain" style="position:absolute; z-index:1;"></canvas>
+        <div style="position:absolute; z-index:0; color:white;">Loading ...</div>
+        <div style="position:absolute; width:50%; height:100%; left:0em; top:0em;">
+            <div style="position:relative; left:0.5em; right:1em; top:2.5em; z-index:3;
+                        color:white; text-align:right; font-size: 3em;">Shengzhi Wu</div>
+        </div>
+        <div style="position:absolute; width:50%; height:100%; right:0em; top:0em;">
+            <img src="assets/shengzhiwu/shengzhiwu.jpg" height=80% title="Shengzhi Wu" alt="Shengzhi Wu" style="position:absolute;
+                    left:10%;
+                    top:5%;
+                    z-index:2;
+                    border-radius:50%;
+                    box-shadow: 1em 0.5em 2em 0em rgba(0, 0, 0, 0.3);">
+        </div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>Graduated from University of Science and Technology of China (USTC).
+            Major in math.
+            Interested in math, computer science, physics and art.
+        </p>
+
+        <p>See <a href="assets/resume.pdf">my résumé</a>.</p>
+    </div>
+
+    <!-- Researches -->
+    <div style="position:relative; width:100%; height:30em;
+    background-color: white;">
+        <canvas id="canvasResearches" style="position:absolute; z-index:0;"></canvas>
+        <div style="position:absolute; width:100%; height:100%; z-index:1; box-shadow: 0em 0em 3em 0em rgba(0, 0, 0, 0.2) inset;"></div>
+        <div style="position:relative; top:4.2em; margin:0 auto; z-index:2;
+        color:black; text-align:center; font-size: 3em;">Researches</div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <a href="researches.html">See more</a>
+    </div>
+
+    <!-- Software & Resources -->
+    <div style="position:relative; width:100%; height:40em;overflow:hidden;background-color: rgb(226, 226, 226);">
+        <div style="position:absolute; width:40%; height:100%; left:0em; top:0em;">
+            <div style="position:relative; left:0.5em; right:1em; top:6em; z-index:3;
+                        color:black; text-align:right; font-size: 3em;">Software & Resources</div>
+        </div>
+        <div style="position:absolute; width:60%; height:100%; right:0em; top:0em;">
+            <img src="assets/blank-window.png" height=80% title="Mindmap" alt="" style="position:absolute;
+                    left:20%;
+                    top:10%;
+                    z-index:1;
+                    border-radius:0.7em;
+                    box-shadow: 1em 0.5em 2em 0em rgba(0, 0, 0, 0.3);">
+            <img src="assets/mindmap.png" height=80% title="Mindmap" alt="" style="position:absolute;
+                    left:10%;
+                    top:5%;
+                    z-index:2;
+                    border-radius:0.7em;
+                    box-shadow: 1em 0.5em 2em 0em rgba(0, 0, 0, 0.3);">
+        </div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <a href="software-resources.html">See more</a>
+    </div>
+    
+    <!-- CAD Works -->
+    <div style="position:relative; width:100%; height:30em; background-color: #9da3aa;">
+                <div style="position:absolute; width:100%; height:100%; z-index:1;
+                background-image: url(assets/mould.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background:url(assets/mould.png) no-repeat center center;
+                background-size:contain;
+                background-attachment:fixed;"></div>
+        <div style="position:relative; top:4.2em; margin:0 auto; z-index:2;
+        color:white; text-align:center; font-size: 3em;">CAD Works</div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>I have always been seeking for ways to incorporate computer technology into the design process as much as possible.
+            The combination I pursue is multifaceted.
+            In my opinion, the role of computers in design is not only to calculate, simulate, visualize and storage designs, they should also influence the occurrence of inspiration.
+            Great CAD methods and workflows should be enlightening, ready to changing the way we think.</p>
+        <p><a href="cad-works.html">See more</a></p>
+        
+    </div>
+
+    <!-- Artworks -->
+    <div style="position:relative; width:100%; height:30em; background-color: black;
+                background-image: url(assets/the-staircase.jpg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background:url(assets/the-staircase.jpg) no-repeat right center;
+                background-size:cover;
+                background-attachment:fixed;">
+        <div style="position:relative; top:4.2em; margin:0 auto; z-index:2;
+        color:white; text-align:center; font-size: 3em;">
+            Artworks
+        </div>
+        <div style="position:absolute; right:1em; bottom:0.5em; padding: 0.5em; font-size: 0.5; background-color: hsla(0, 0%, 100%, 70%);">
+                <a href="the-staircase.html">View the 3d scene</a>
+        </div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>Use technology exploring the beauty from complecity of the world.</p>
+        <p><a href="artworks.html">See more</a></p>
+    </div>
+
+    <!-- Contact -->
+    <div style="position:relative; width:100%; height:18em; background-color: black; background-image:linear-gradient(to right,#835ea3,#c07ca1);">
+        <div style="position:relative; top:2.3em; margin:0 auto; z-index:1;
+        color:white; text-align:center; font-size: 3em;">Contact</div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        E-mail: wushengzhi@mail.ustc.edu.cn
+    </div>
+
+    <script src="render/load-n-body-data.js"></script>
+    <script src="render/index.js"></script>
+
+    <script type="module">
+        import * as THREE from "https://unpkg.com/three/build/three.module.js";
+
+        function fullFill(element)  // 设置元素尺寸，使得其和父元素尺寸相同
+        {
+            const parent = element.parentNode;
+            element.width = parent.offsetWidth;
+            element.height = parent.offsetHeight;
+        }
+
+        const canvas = document.querySelector('#canvasMain');
+        fullFill(canvas);
+
+        var material;
+
+        function init(canvas) {
+            const renderer = new THREE.WebGLRenderer({canvas});
+            renderer.autoClearColor = false;
+
+            const camera = new THREE.OrthographicCamera(
+                -1, // left
+                1, // right
+                1, // top
+                -1, // bottom
+                -1, // near,
+                1, // far
+            );
+            const scene = new THREE.Scene();
+            const plane = new THREE.PlaneGeometry(2, 2);
+
+            const fragmentShader = `
+                #ifdef GL_ES
+                precision mediump float;
+                #endif
+
+                uniform vec2 u_resolution;
+                uniform float u_time;
+
+                void main() {
+                    vec2 r = u_resolution.xy;
+                    float t = u_time;
+                    vec3 c;
+                    float z = t*0.8;
+                    vec2 p = gl_FragCoord.xy/r;
+                    p -= .5;
+                    p.x *= r.x/r.y;
+                    p *= 10.;
+                    for(int i=0;i<3;i++) {
+                        vec2 a = p;
+                        z += .04;
+                        for(int j=0;j<5;j++) {
+                            a += vec2(sin(a.y+z), sin(a.x+z));
+                        }
+                        c[i] = .05/length(mod(a,1.)-.5);
+                    }
+                    gl_FragColor = vec4(min(c, 1.0)*0.5, 1.);
+                }
+            `
+            const uniforms = {
+                u_resolution:  { value: new THREE.Vector2(canvas.width, canvas.height) },
+                u_time: { value: 0.0 }
+            };
+            material = new THREE.ShaderMaterial({
+                fragmentShader,
+                uniforms
+            });
+            scene.add(new THREE.Mesh(plane, material));
+
+            function render() {
+                material.uniforms.u_time.value += 1./60;
+                renderer.render(scene, camera);
+            }
+            setInterval(render, 1000/60);
+        }
+
+        init(canvas);
+    </script>
+
 </body>
 </html>

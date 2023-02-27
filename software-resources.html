@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software & Resources</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body style="margin:0; padding:0;">
+    <!-- Navigator -->
+    <div class="navigator"></div>
+    <script type="text/javascript">
+        $(".navigator").load('navigator.html');
+    </script>
+    
+    <!-- Mindmap -->
+    <div style="position:relative; width:100%; height:40em;overflow:hidden;background-color: rgb(226, 226, 226);">
+        <div style="position:absolute; width:40%; height:100%; left:0em; top:0em;">
+            <div style="position:absolute; width:80%; height:100%; right:0%; top:0%;">
+                <div style="position:absolute; width:100%; height:60%; left:0%; top:0%;">
+                    <img src="assets/mindmap_icon.png" width=40% title="Mindmap" alt="" style="position:absolute;
+                        left: 30%;
+                        bottom: 10%;
+                        z-index:1;">
+                </div>
+                <div style="position:absolute; width:100%; height:40%; left:0%; bottom:0%;">
+                    <div style="position:relative; left:0em; right:0em; top:0em; z-index:3;
+                            color:black; text-align:center; font-size: 3em;">Mindmap</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute; width:60%; height:100%; right:0em; top:0em;">
+            <img src="assets/blank-window.png" height=80% title="Mindmap" alt="" style="position:absolute;
+                    left:20%;
+                    top:10%;
+                    z-index:1;
+                    border-radius:0.7em;
+                    box-shadow: 1em 0.5em 2em 0em rgba(0, 0, 0, 0.3);">
+            <img src="assets/mindmap.png" height=80% title="Mindmap" alt="" style="position:absolute;
+                    left:10%;
+                    top:5%;
+                    z-index:2;
+                    border-radius:0.7em;
+                    box-shadow: 1em 0.5em 2em 0em rgba(0, 0, 0, 0.3);">
+        </div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>
+            <!-- Mindmap 是一款简结、实用、美观的笔记软件，用于绘制树状思维导图。
+            其基于Electron开发，兼容性好，运行顺畅。
+            它是先进、有力的生产工具，提供了人性化的快捷键，可以极大地提高工作效率，让思维延展的速度不再受限于记录工具与媒介。 -->
+            Mindmap is a lightweight, practical and beautiful note-taking software for drawing tree mind maps.
+            Working with the advanced and powerful production tool,
+            with a set of elaborate humanized hotkeys, which can significantly improve your work efficiency,
+            your thought will no longer be limited by the process of recording.</p>
+        <p>
+            <!-- Mindmap 还包含一些市场上多数脑图软件不具有的高级功能。
+            用户可以方便地插入LaTeX数学公式，记录理科内容不再受限。
+            用户还可以插入HTML块，这为表现提供了无限可能。 -->
+            Mindmap contains some advanced features not available in most other softwares.
+            You can easily insert LaTeX formulas and write down technical ideas whenever you want.
+            Inserting HTML blocks is also supported, realising endless possibilities for presentation.</p>
+        <p>
+            Powered by Electron, Mindmap has good compatibility and is always ready to offer you smooth usage experiences.
+            It also works well with high DPI deviced
+        </p>
+        <p>
+            No need to worry about the maintainability and extendibility of Mindmap or that your notes may not be supposed in the long term,
+            for the structure of documents (.mm files) of the software has been designed brief, flexible and readable.
+            Even using normal text editing software, you can read and edit the content of your notes.
+            Futher more, in case the tree is not too deep (depth < 7) and has no advanced nodes (like LaTeX nodes),
+            Minmap files is also compatible with Markdown (.md files),
+            which means you can open the notes with Markdown editors (like <a href="https://typora.io/">Typora</a>) to see and edit the hierarchical structure.
+        </p>
+        <p>Now you can get Mindmap 2.2 (for Windows only) for free!
+            Download from <a href="https://drive.google.com/file/d/1UOglWyt_mDxUZ8TBz2W40HE9ZIoVJth1/view?usp=sharing">Google Drive</a> or <a href="https://pan.baidu.com/s/1rf72OKyMypdfEa6EloL55w?pwd=jznh">百度网盘</a>. </p>
+    </div>
+    
+    <!-- Audio Creator -->
+    <div style="position:relative; width:100%; height:30em; background-color: black;
+                background-image: url(assets/audio-creator/风铃声节点程序.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background:url(assets/audio-creator/风铃声节点程序.png) no-repeat right center;
+                background-size:cover;
+                background-attachment:fixed;">
+        <div style="position:relative; top:4.2em; margin:0 auto; z-index:2;
+        color:white; text-align:center; font-size: 3em;">Audio Creator</div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>Audio Creator 是一套用于程序化地生成音频的应用软件系统。
+            它提供交互式图形界面。
+            用户可以便捷地构建声音的逻辑，并得到实时的反馈。
+            Audio Creator 的主要用途在于生成用于游戏或影视制作的音频素材。
+            相对于从现实世界中采集声音素材并使用这一传统方法，使用逻辑生成音效的优势在于可以引入参数和随机性。
+            引入参数意味着可以获得在某一范围内连续变化的声音效果。
+            例如可以开发一个生成风声音效的程序，其参数为风的强度。
+            将天气系统提供的参数作为输入即可实时生成风声。
+            注意，要使得音效逼真，显然不能只靠简单地调大音量来产生更强的风的效果。
+            强的风可能意味着更多的湍流，以及沙尘碰撞的声音。
+            随机性也可有效改善音效的自然程度。
+            例如可以生成具有随机性的脚步声，使得每一步的声音都略有不同。
+        </p>
+        <p>Audio Creator 的另一个设计目的是验证人对声音信号包含信息认识的充分性。
+            在我看来，通常情况下，对于一个客体，终极的认识莫过于使用一套底层机制不同的系统复现它的机能。
+            举例来说，当你用钢铁、塑料和硅制作了一只能够飞行的机械鸟之后，你才能说你彻底认识了鸟类飞行的机能。
+            如果你只是观察过鸟的肌肉和骨骼、看过了鸟飞行的视频，你并不是真地了解了它是如何飞行的，你只是看到了表面。
+            对于声音信号，当你用纯数理逻辑复现了它，而不是用自然中采集的声音素材拼凑出了它的时候，你才能说你对其包含的所有必要信息有了彻底的认识。
+            对此软件的设计便是在这种想法的指导下进行的。
+        </p>
+        <p>Audio Creator 目前仍在开发中。</p>
+        <p></p><a href="audio-creator.html">See more</a></p>
+    </div>
+    
+    <!-- Grasshopper Tutorial -->
+    <div style="position:relative; width:100%; height:30em;overflow:hidden;background-color: rgb(226, 226, 226);">
+        <div style="position:absolute; width:45%; height:100%; left:0em; top:0em;">
+            <div style="position:relative; left:0.5em; right:1em; top:4.5em; z-index:4;
+                        color:black; text-align:right; font-size: 3em;">Grasshopper Tutorial</div>
+        </div>
+        <div style="position:absolute; width:55%; height:100%; right:0em; top:0em;">
+            <img src="assets/grasshopper-file-icon.png" height=60% title="Mindmap" alt="" style="position:absolute;
+                    left:30%;
+                    top:29%;
+                    z-index:1;">
+            <img src="assets/grasshopper-file-icon.png" height=60% title="Mindmap" alt="" style="position:absolute;
+                    left:20%;
+                    top:21%;
+                    z-index:2;">
+            <img src="assets/grasshopper-file-icon.png" height=60% title="Mindmap" alt="" style="position:absolute;
+                    left:10%;
+                    top:13%;
+                    z-index:3;">
+        </div>
+    </div>
+    <div style="position:relative; background-color: white; margin-left:2em; margin-right:2em; margin-top:2em; margin-bottom:4em;">
+        <p>This is a tutorial for Grasshopper beginners.
+            It contains a set of Grasshopper documents (.gh files)。
+            通过阅读这些文档，读者可以快速地掌握 Grasshopper 的使用逻辑，并获得完成简单的工作的能力。</p>
+        <p>Grasshopper 是三维造型软件Rhino的一款插件，用于参数化模型构建，广泛应用于建筑设计等计算机辅助设计领域。
+            借助此软件及其现代、美观的交互式图形界面，用户可以方便地组织数学和几何逻辑，从而用一种高度程序化的方法构建三维模型。</p>
+        <p>请到<a href="https://github.com/ShengzhiWu/GrasshopperTutorial">这里</a>获取此教程。 </p>
+    </div>
+</body>
+</html>
